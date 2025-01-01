@@ -1,28 +1,32 @@
-/* General styles */
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Press Start 2P', cursive;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0; /* Light grey background */
-    color: #1a237e; /* Dark blue text */
+    background: #202124; /* Dark background */
+    color: #f4f4f4; /* Light text */
     line-height: 1.6;
 }
 
 header {
-    background-color: #283593; /* Darker blue for header */
-    color: #ffffff; /* White text */
-    padding: 20px 0;
+    background: #ff6f61; /* Vibrant coral */
+    color: #000;
     text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 10px 0 0;
 }
 
 nav ul li {
@@ -31,13 +35,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #000;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #fff;
 }
 
 main {
@@ -49,28 +54,51 @@ section {
 }
 
 h2 {
-    border-bottom: 2px solid #1a237e;
-    padding-bottom: 5px;
+    background: #ff6f61;
+    color: #000;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
 }
 
 .art-gallery {
     display: flex;
-    gap: 10px;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .art-gallery img {
     width: 150px;
     height: auto;
-    border: 2px solid #1a237e;
+    border: 3px solid #ff6f61;
     border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 footer {
     text-align: center;
-    padding: 10px 0;
-    background-color: #283593;
-    color: #ffffff;
-    margin-top: 20px;
+    padding: 10px;
+    background: #ff6f61;
+    color: #000;
+    margin-top: 40px;
+}
+
+/* Buttons & Links */
+a {
+    color: #ff4081;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff6f61;
 }
 
 /* Responsive Design */
@@ -80,12 +108,7 @@ footer {
         margin: 10px 0;
     }
 
-    .art-gallery {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .art-gallery img {
-        width: 80%;
+        width: 100px;
     }
 }

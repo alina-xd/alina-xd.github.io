@@ -148,6 +148,19 @@ a:hover {
     transform: scale(1.2);
 }
 
+.cat-pic{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top:12px;
+}
+
+.cat-pic img{
+    width: 216px;
+    height: 216px;
+    transition: transform 0.3s ease-in-out;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     header {
